@@ -8,13 +8,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <p><a href="index.html">← Feldavi</a></p>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="30" height="30">Feldavi</a>
+    <nav aria-label="Main">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#security">Security</a>
+      <a href="install.html">For admins</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
   <h1>Support</h1>
 
   <h2>Getting started</h2>
   <ol>
-    <li>Your Salesforce administrator installs the Feldavi package from AppExchange and opens <strong>Feldavi Setup</strong>.</li>
+    <li>Your Salesforce administrator installs the Feldavi package and opens <strong>Feldavi Setup</strong> (see the <a href="install.html">installation guide</a>).</li>
     <li>The administrator assigns you the <strong>Feldavi User</strong> permission set and shares the setup QR code.</li>
     <li>Install Feldavi on your iPhone or iPad, tap <strong>Scan setup QR code</strong> and sign in with your Salesforce account.</li>
   </ol>
@@ -44,5 +55,19 @@
 
   <p><a href="privacy.html">Privacy Policy</a></p>
 </main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="install.html">For admins</a>
+      <a href="privacy.html">Privacy &amp; Security</a>
+      <a href="support.html">Support</a>
+    </div>
+    <p>© 2026 Feldavi · Built by <a href="https://ricardo19-deve.github.io/">Ricardo Pinheiro</a></p>
+    <p>Salesforce is a trademark of Salesforce, Inc. Feldavi is an independent product and is not affiliated with or endorsed by
+    Salesforce, Inc.</p>
+  </div>
+</footer>
 </body>
 </html>

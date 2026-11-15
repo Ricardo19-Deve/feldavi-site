@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feldavi – Install and set up (Salesforce admins)</title>
+  <meta name="description" content="Install the Feldavi package in Salesforce, connect the app and share the setup QR code with your team.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="30" height="30">Feldavi</a>
+    <nav aria-label="Main">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#security">Security</a>
+      <a href="install.html">For admins</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <p class="eyebrow">For Salesforce admins</p>
+  <h1>Install and set up Feldavi</h1>
+  <p class="lead">About 30 minutes, once. After that your team sets up the app themselves with a QR code.</p>
+
+  <h2>Before you start</h2>
+  <ul>
+    <li>Salesforce Enterprise, Unlimited, Performance or Developer Edition (Professional Edition with API access).</li>
+    <li>A System Administrator user to install the package.</li>
+    <li>Reps need an iPhone or iPad with iOS 17 or later.</li>
+  </ul>
+
+  <ol class="steps">
+    <li>
+      <h3>Install the Feldavi package</h3>
+      <p>Adds the Feldavi Setup console, the mobile configuration API and the Feldavi Admin and Feldavi User permission sets.
+      Install in a sandbox first if your company requires it.</p>
+      <div class="notice"><strong>Package release in progress.</strong> The installation links will appear here, and Feldavi will be
+      listed on Salesforce AppExchange. For early access, <a href="support.html">contact support</a>.</div>
+      <div class="actions" style="justify-content:flex-start">
+        <span class="button disabled" aria-disabled="true">Install in Production</span>
+        <span class="button disabled" aria-disabled="true">Install in Sandbox</span>
+      </div>
+    </li>
+    <li>
+      <h3>Assign permission sets</h3>
+      <p><strong>Feldavi Admin</strong> to the people who configure the app, and <strong>Feldavi User</strong> to every rep who
+      uses it. Reps keep their own Salesforce profile and sharing.</p>
+    </li>
+    <li>
+      <h3>Create the app connection</h3>
+      <p>In Setup, open <strong>External Client App Manager</strong> and create an app with OAuth enabled:</p>
+      <ul>
+        <li>Callback URL: <code>feldavi://oauth/callback</code></li>
+        <li>OAuth scopes: <em>Manage user data via APIs (api)</em> and <em>Perform requests at any time (refresh_token, offline_access)</em></li>
+        <li>Turn on <strong>PKCE</strong> and turn off <strong>Require secret for Web Server Flow</strong>. No client secret is used.</li>
+      </ul>
+      <p>Copy the consumer key and paste it in <strong>Feldavi Setup → Workspace → Salesforce sign-in</strong>.</p>
+    </li>
+    <li>
+      <h3>Configure the workspace</h3>
+      <p>In <strong>Feldavi Setup</strong>, set your company name and brand colour, then choose which objects appear and which
+      fields are hidden, read only or editable. Optionally connect an AI provider; its key stays in Salesforce.</p>
+    </li>
+    <li>
+      <h3>Share the setup QR code</h3>
+      <p>In <strong>Device setup</strong>, download the QR code or copy the link and send it to your team. Reps install Feldavi from
+      the App Store, scan the code and sign in with their own Salesforce user.</p>
+    </li>
+  </ol>
+
+  <h2>Pricing</h2>
+  <p>Feldavi Pro is a per-user subscription, monthly or yearly, bought in the app through the App Store. Prices are shown in the
+  App Store in each country's currency. The Salesforce package is free.</p>
+
+  <h2>Security review</h2>
+  <p>Feldavi has no servers: the app talks only to your Salesforce org, with each user's own permissions. See
+  <a href="privacy.html">Privacy &amp; Security</a> for the data flows and on-device protection.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy &amp; Security</a>
+      <a href="support.html">Support</a>
+    </div>
+    <p>© 2026 Feldavi · Built by <a href="https://ricardo19-deve.github.io/">Ricardo Pinheiro</a></p>
+    <p>Salesforce is a trademark of Salesforce, Inc. Feldavi is an independent product and is not affiliated with or endorsed by
+    Salesforce, Inc.</p>
+  </div>
+</footer>
+</body>
+</html>

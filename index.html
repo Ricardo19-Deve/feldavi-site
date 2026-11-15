@@ -3,28 +3,127 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Feldavi – Salesforce in the field</title>
+  <title>Feldavi – Your Salesforce, built for the field</title>
+  <meta name="description" content="Feldavi is an iPhone and iPad app for field teams that run on Salesforce: Today at a glance, any object your admin enables, Siri, offline and photos. No Feldavi servers.">
+  <meta property="og:title" content="Feldavi – Your Salesforce, built for the field">
+  <meta property="og:description" content="An iPhone and iPad app for field teams that run on Salesforce, configured by your Salesforce admin.">
+  <meta property="og:image" content="https://feldavi.com/images/app-today-search.jpg">
   <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="30" height="30">Feldavi</a>
+    <nav aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#security">Security</a>
+      <a href="install.html">For admins</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <img class="app-icon" src="logo.png" width="96" height="96" alt="Feldavi app icon">
-  <h1>Feldavi</h1>
-  <p class="lead">A mobile workspace for field sales and service teams that run on Salesforce.</p>
-  <ul>
-    <li>Set up in seconds: scan a QR code from your Salesforce admin and sign in.</li>
-    <li>Your objects, your fields: admins choose what appears and what can be edited, for any standard or custom object.</li>
-    <li>Today at a glance: meetings, tasks, renewals and pipeline.</li>
-    <li>Visit reports by dictation, saved as Salesforce activities.</li>
-    <li>Optional AI assistance through the AI provider your company chooses.</li>
-    <li>Your Salesforce security always applies: users only see and edit what they are allowed to.</li>
-    <li>No Feldavi servers: your data goes only between the iPhone and your company's Salesforce.</li>
-    <li>Siri, Spotlight search, meeting reminders, photos on records and an encrypted offline copy.</li>
-  </ul>
-  <p>For administrators: install the Feldavi package from Salesforce AppExchange, then open Feldavi Setup.</p>
-  <p><a href="support.html">Support</a> · <a href="privacy.html">Privacy &amp; Security</a></p>
-  <p class="muted">Salesforce is a trademark of Salesforce, Inc. Feldavi is an independent product and is not affiliated with or endorsed by Salesforce, Inc.</p>
+  <div class="wrap hero">
+    <img class="icon" src="logo.png" alt="Feldavi app icon" width="112" height="112">
+    <h1>Your Salesforce, built for the field.</h1>
+    <p class="lead">Feldavi puts your accounts, pipeline, meetings and follow-ups on iPhone and iPad, set up in minutes by your
+    Salesforce admin. No new database, no Feldavi servers: just your company's Salesforce.</p>
+    <div class="actions">
+      <span class="button disabled" aria-disabled="true">Coming soon to the App Store</span>
+      <a class="button secondary" href="install.html">For Salesforce admins →</a>
+    </div>
+    <p class="fine">iPhone and iPad · iOS 17 or later · Siri in English and Portuguese</p>
+    <div class="hero-shot">
+      <img src="images/app-today-search.jpg" alt="Feldavi Today screen with meetings, tasks, renewals and pipeline, next to search across Salesforce" width="1600" height="1114">
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="wrap">
+      <p class="eyebrow">Features</p>
+      <h2>Everything a field rep needs, nothing they don't.</h2>
+      <p class="section-lead">Your admin chooses the objects and fields. Feldavi turns them into a fast, native app that works the way
+      iPhone works.</p>
+      <div class="grid">
+        <div class="card"><div class="glyph" aria-hidden="true">☀</div><h3>Today at a glance</h3><p>Meetings, tasks, renewals and pipeline from Salesforce, sorted by what needs you first.</p></div>
+        <div class="card"><div class="glyph" aria-hidden="true">▦</div><h3>Any object your admin enables</h3><p>Accounts, opportunities, cases, contacts or custom objects, with the fields your admin picks.</p></div>
+        <div class="card"><div class="glyph" aria-hidden="true">✎</div><h3>Real Salesforce editing</h3><p>Lookups, dependent picklists, record types, multi-currency and validation, as in Salesforce.</p></div>
+        <div class="card"><div class="glyph" aria-hidden="true">⌕</div><h3>Search everywhere</h3><p>Search across every enabled object, plus recently opened records in iPhone Spotlight.</p></div>
+        <div class="card"><div class="glyph" aria-hidden="true">◉</div><h3>Siri, hands-free</h3><p>"Log a visit in Feldavi." Siri asks first, then saves to Salesforce without opening the app.</p></div>
+        <div class="card"><div class="glyph" aria-hidden="true">▣</div><h3>Photos and files</h3><p>Take a photo on a visit and attach it to the record in Salesforce Files.</p></div>
+        <div class="card"><div class="glyph" aria-hidden="true">⇅</div><h3>Works without signal</h3><p>An encrypted copy of what you last opened, ready in basements and on the road.</p></div>
+        <div class="card"><div class="glyph" aria-hidden="true">✦</div><h3>Optional AI</h3><p>Briefings, emails and visit reports through the AI provider your company chooses.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="wrap">
+      <p class="eyebrow">See it</p>
+      <h2>Native on iPhone, configured in Salesforce.</h2>
+      <p class="section-lead">Screens from a demo Salesforce org with fictitious data.</p>
+      <div class="gallery">
+        <figure><a href="images/app-sign-in.jpg"><img src="images/app-sign-in.jpg" alt="Welcome screen and the Feldavi Pro subscription screen" loading="lazy" width="1600" height="1114"></a><figcaption>Set up by your admin with a QR code</figcaption></figure>
+        <figure><a href="images/app-account-related.jpg"><img src="images/app-account-related.jpg" alt="Account with quick actions, related lists, activity, photos and insights" loading="lazy" width="1600" height="1114"></a><figcaption>Accounts with related lists, activity and photos</figcaption></figure>
+        <figure><a href="images/app-opportunity-detail-edit.jpg"><img src="images/app-opportunity-detail-edit.jpg" alt="Opportunity in read and edit view with picklist, currency and date fields" loading="lazy" width="1600" height="1114"></a><figcaption>View and edit any record</figcaption></figure>
+        <figure><a href="images/app-meeting-privacy.jpg"><img src="images/app-meeting-privacy.jpg" alt="New meeting form and the privacy section in Settings" loading="lazy" width="1600" height="1114"></a><figcaption>Meetings straight to your Salesforce calendar</figcaption></figure>
+        <figure><a href="images/app-dark-mode.jpg"><img src="images/app-dark-mode.jpg" alt="Today and an opportunity in dark mode" loading="lazy" width="1600" height="1114"></a><figcaption>Light and dark mode</figcaption></figure>
+        <figure><a href="images/admin-workspace-branding.jpg"><img src="images/admin-workspace-branding.jpg" alt="Feldavi Setup in Salesforce with branding and a live phone preview" loading="lazy" width="1600" height="1186"></a><figcaption>Feldavi Setup inside Salesforce</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="security">
+    <div class="wrap">
+      <div class="band">
+        <p class="eyebrow">Security and privacy</p>
+        <h2>No Feldavi servers. Nothing to leak.</h2>
+        <p class="section-lead">Your data travels only between the iPhone and your company's Salesforce. We never receive it, store
+        it or share it.</p>
+        <div class="grid">
+          <div class="card"><h3>Salesforce sign-in</h3><p>OAuth with PKCE on Salesforce's own page. Feldavi never sees passwords; SSO and MFA apply.</p></div>
+          <div class="card"><h3>Your permissions, enforced</h3><p>Salesforce checks object, field and record access on every request.</p></div>
+          <div class="card"><h3>Encrypted on the device</h3><p>The offline copy is encrypted with a key that never leaves the iPhone, and deleted at sign-out.</p></div>
+          <div class="card"><h3>No tracking</h3><p>No ads, no analytics and no third-party tracking SDKs.</p></div>
+        </div>
+        <p style="margin-top:20px"><a href="privacy.html">Read the full privacy and security details →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="admins">
+    <div class="wrap">
+      <p class="eyebrow">For Salesforce admins</p>
+      <h2>Live in an afternoon.</h2>
+      <p class="section-lead">Install the Feldavi package, choose what reps see, and share a QR code. Each rep subscribes to Feldavi Pro
+      in the app, monthly or yearly, through the App Store.</p>
+      <ol class="steps">
+        <li><h3>Install the Feldavi package</h3><p>Adds Feldavi Setup, the mobile configuration API and permission sets to your org.</p></li>
+        <li><h3>Choose objects and fields</h3><p>Hidden, read only or editable, per field. Branding, AI and features in one place.</p></li>
+        <li><h3>Share the QR code</h3><p>Reps scan it in the app and sign in with their own Salesforce user.</p></li>
+      </ol>
+      <div class="actions" style="justify-content:flex-start;margin-top:22px">
+        <a class="button primary" href="install.html">Installation guide</a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="links">
+      <a href="install.html">For admins</a>
+      <a href="privacy.html">Privacy &amp; Security</a>
+      <a href="support.html">Support</a>
+      <a href="https://ricardo19-deve.github.io/salesforce-mobile.html">Engineering case study</a>
+    </div>
+    <p>© 2026 Feldavi · Built by <a href="https://ricardo19-deve.github.io/">Ricardo Pinheiro</a></p>
+    <p>Salesforce is a trademark of Salesforce, Inc. Feldavi is an independent product and is not affiliated with or endorsed by
+    Salesforce, Inc. Apple, iPhone, iPad and Siri are trademarks of Apple Inc.</p>
+  </div>
+</footer>
 </body>
 </html>
