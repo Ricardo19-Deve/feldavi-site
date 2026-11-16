@@ -220,7 +220,18 @@ th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom
 th { font-weight: 600; }
 
 @media (max-width: 600px) {
-  .site-header nav { gap: 12px; font-size: 0.85rem; }
+  /* One line on phones: the icon stands for the brand and the links stay on a single row. */
+  .site-header .inner { gap: 14px; }
+  .brand { font-size: 0; gap: 0; }
+  .site-header nav {
+    gap: 16px;
+    font-size: 0.9rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .site-header nav::-webkit-scrollbar { display: none; }
   .band { padding: 28px 18px; border-radius: 22px; }
   table { font-size: 14px; }
   th, td { padding: 8px 4px; }
