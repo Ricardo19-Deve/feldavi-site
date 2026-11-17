@@ -79,6 +79,16 @@
   <h2>Security review</h2>
   <p>Feldavi has no servers: the app talks only to your Salesforce org, with each user's own permissions. See
   <a href="privacy.html">Privacy &amp; Security</a> for the data flows and on-device protection.</p>
+
+  <h2>Salesforce best practices</h2>
+  <ul>
+    <li><strong>Sign-in:</strong> OAuth 2.0 with PKCE through an External Client App; no client secret, no stored passwords. Sessions can be revoked in Setup.</li>
+    <li><strong>Access:</strong> every request runs as the signed-in user. Apex classes run with sharing, with user-mode queries and <code>Security.stripInaccessible</code>; one narrowly scoped reader returns the workspace configuration, which holds no secrets.</li>
+    <li><strong>Governance:</strong> permission sets and a custom permission, no profile changes. AI keys stay in a protected custom setting and are reached through Remote Site Settings.</li>
+    <li><strong>Data:</strong> standard objects (Tasks, Events, Files) and your record types, dependent picklists, currencies and validation rules. No data is copied out of Salesforce.</li>
+    <li><strong>Quality:</strong> 34 Apex tests with 94% code coverage, run as admin, rep and unauthorised users; Salesforce Code Analyzer reports no security findings.</li>
+    <li><strong>Limits:</strong> SOQL <code>DISTANCE</code> for location search, paging and cached metadata keep API calls low.</li>
+  </ul>
 </main>
 
 <footer class="site-footer">
