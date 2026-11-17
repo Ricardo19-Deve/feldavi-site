@@ -38,17 +38,19 @@
       <h3>Install the Feldavi package</h3>
       <p>Adds the Feldavi Setup console, the mobile configuration API and the Feldavi Admin and Feldavi User permission sets.
       Install in a sandbox first if your company requires it.</p>
-      <div class="notice"><strong>Package release in progress.</strong> The installation links will appear here, and Feldavi will be
-      listed on Salesforce AppExchange. For early access, email <a href="mailto:support@feldavi.com">support@feldavi.com</a>.</div>
       <div class="actions" style="justify-content:flex-start">
-        <span class="button disabled" aria-disabled="true">Install in Production</span>
-        <span class="button disabled" aria-disabled="true">Install in Sandbox</span>
+        <a class="button primary" href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04tWV0000008BcbYAE" rel="noopener">Install in Production</a>
+        <a class="button secondary" href="https://test.salesforce.com/packaging/installPackage.apexp?p0=04tWV0000008BcbYAE" rel="noopener">Install in Sandbox</a>
       </div>
+      <p class="fine">Feldavi 1.0.0, managed package (namespace <code>feldavi</code>). Choose <strong>Install for Admins Only</strong>:
+      access is given with the Feldavi permission sets in the next step. When asked, approve access to the AI provider sites
+      (used only if you turn on AI). The AppExchange listing is in progress.</p>
     </li>
     <li>
       <h3>Assign permission sets</h3>
       <p><strong>Feldavi Admin</strong> to the people who configure the app, and <strong>Feldavi User</strong> to every rep who
-      uses it. Reps keep their own Salesforce profile and sharing.</p>
+      uses it. Reps keep their own Salesforce profile and sharing. Keep the org-wide default of <em>Feldavi Configuration</em>
+      as Public Read Only so reps can load the workspace settings (they contain no secrets).</p>
     </li>
     <li>
       <h3>Create the app connection</h3>
