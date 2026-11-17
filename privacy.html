@@ -56,7 +56,7 @@
     are only ever sent to your own Salesforce org.</li>
     <li><strong>Workspace settings</strong> from your administrator (branding, objects and fields to show). No records.</li>
     <li><strong>An encrypted offline copy</strong> of what you last saw (Today, recent lists and records you opened), so the
-    app works without signal. It is encrypted with XChaCha20-Poly1305 using a key kept in the Keychain on this iPhone only,
+    app works without signal. It is encrypted with ChaCha20-Poly1305 from Apple CryptoKit, using a key kept in the Keychain on this iPhone only,
     readable only while the iPhone is unlocked, never synced or backed up. It expires after 7 days.</li>
     <li><strong>iPhone search (Spotlight)</strong>: the names of records you opened, so you can find them from the iPhone
     search. The index stays on this iPhone and expires after 30 days.</li>
